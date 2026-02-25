@@ -1,4 +1,4 @@
-# Hardened Batch Signal Pipeline
+# Deterministic Batch Signal Pipeline
 
 An enterprise-grade, deterministic, and observable batch pipeline for processing financial OHLCV data.
 
