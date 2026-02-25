@@ -1,0 +1,104 @@
+2026-02-26 01:34:17,034 | INFO | Pipeline | main | Job start
+2026-02-26 01:34:17,035 | INFO | Pipeline | main | CLI arguments: Namespace(config='config.yaml', data='data.csv')
+2026-02-26 01:34:17,035 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 01:34:17,037 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 01:34:17,037 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 01:34:17,050 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 01:34:17,051 | INFO | Pipeline | process_pipeline | Rolling mean start
+2026-02-26 01:34:17,055 | INFO | Pipeline | process_pipeline | Rolling mean end
+2026-02-26 01:34:17,055 | INFO | Pipeline | process_pipeline | Signal generation start
+2026-02-26 01:34:17,061 | INFO | Pipeline | process_pipeline | Signal generation end
+2026-02-26 01:34:17,063 | INFO | Pipeline | write_metrics | Metrics written to metrics.json
+2026-02-26 01:34:17,067 | INFO | Pipeline | main | Final status: success
+2026-02-26 01:34:24,956 | INFO | Pipeline | main | Job start
+2026-02-26 01:34:24,956 | INFO | Pipeline | main | CLI arguments: Namespace(config='missing.yaml', data='data.csv')
+2026-02-26 01:34:24,956 | INFO | Pipeline | load_config | Loading config from missing.yaml
+2026-02-26 01:34:24,956 | ERROR | Pipeline | main | Pipeline error: Config file not found: missing.yaml
+2026-02-26 01:34:24,957 | INFO | Pipeline | write_metrics | Metrics written to metrics.json
+2026-02-26 01:34:28,762 | INFO | Pipeline | main | Job start
+2026-02-26 01:34:28,762 | INFO | Pipeline | main | CLI arguments: Namespace(config='config.yaml', data='invalid_data.csv')
+2026-02-26 01:34:28,763 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 01:34:28,765 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 01:34:28,767 | INFO | Pipeline | validate_data | Validating dataset from invalid_data.csv
+2026-02-26 01:34:28,772 | ERROR | Pipeline | main | Pipeline error: Required column 'close' missing
+2026-02-26 01:34:28,774 | INFO | Pipeline | write_metrics | Metrics written to metrics.json
+2026-02-26 01:40:18,151 | INFO | Pipeline | main | Job start
+2026-02-26 01:40:18,151 | INFO | Pipeline | main | CLI arguments: Namespace(config='config.yaml', data='data.csv')
+2026-02-26 01:40:18,152 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 01:40:18,152 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 01:40:18,153 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 01:40:18,164 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 01:40:18,166 | INFO | Pipeline | process_pipeline | Rolling mean start
+2026-02-26 01:40:18,170 | INFO | Pipeline | process_pipeline | Rolling mean end
+2026-02-26 01:40:18,170 | INFO | Pipeline | process_pipeline | Signal generation start
+2026-02-26 01:40:18,175 | INFO | Pipeline | process_pipeline | Signal generation end
+2026-02-26 01:40:18,177 | INFO | Pipeline | write_metrics | Metrics written to metrics.json
+2026-02-26 01:40:18,181 | INFO | Pipeline | main | Final status: success
+2026-02-26 01:40:41,583 | INFO | Pipeline | main | Job start
+2026-02-26 01:40:41,584 | INFO | Pipeline | main | CLI arguments: Namespace(config='config.yaml', data='data.csv')
+2026-02-26 01:40:41,584 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 01:40:41,585 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 01:40:41,585 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 01:40:41,591 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 01:40:41,591 | INFO | Pipeline | process_pipeline | Rolling mean start
+2026-02-26 01:40:41,592 | INFO | Pipeline | process_pipeline | Rolling mean end
+2026-02-26 01:40:41,592 | INFO | Pipeline | process_pipeline | Signal generation start
+2026-02-26 01:40:41,594 | INFO | Pipeline | process_pipeline | Signal generation end
+2026-02-26 01:40:41,595 | INFO | Pipeline | write_metrics | Metrics written to metrics.json
+2026-02-26 01:40:41,597 | INFO | Pipeline | main | Final status: success
+2026-02-26 01:47:15,966 | INFO | Pipeline | main | Job start
+2026-02-26 01:47:15,967 | INFO | Pipeline | main | CLI arguments: Namespace(input='data.csv', config='config.yaml', output='metrics.json', log_file='run.log')
+2026-02-26 01:47:15,967 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 01:47:15,968 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 01:47:15,968 | INFO | Pipeline | load_config | Validated config: seed=42, window=5, version=v1
+2026-02-26 01:47:15,968 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 01:47:15,975 | INFO | Pipeline | validate_data | Rows loaded: 10
+2026-02-26 01:47:15,975 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 01:47:15,976 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean start
+2026-02-26 01:47:15,977 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean end
+2026-02-26 01:47:15,977 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation start
+2026-02-26 01:47:15,979 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation end
+2026-02-26 01:47:15,980 | INFO | Pipeline | write_metrics | Metrics summary written to metrics.json
+2026-02-26 01:47:15,981 | INFO | Pipeline | main | Job end | status: success
+2026-02-26 02:27:53,791 | INFO | Pipeline | main | Job start
+2026-02-26 02:27:53,792 | INFO | Pipeline | main | CLI arguments: Namespace(input='data.csv', config='config.yaml', output='metrics.json', log_file='run.log')
+2026-02-26 02:27:53,792 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 02:27:53,802 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 02:27:53,802 | INFO | Pipeline | load_config | Validated config: seed=42, window=5, version=v1
+2026-02-26 02:27:53,802 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 02:27:53,830 | INFO | Pipeline | validate_data | Rows loaded: 10
+2026-02-26 02:27:53,831 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 02:27:53,831 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean start
+2026-02-26 02:27:53,833 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean end
+2026-02-26 02:27:53,834 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation start
+2026-02-26 02:27:53,838 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation end
+2026-02-26 02:27:53,839 | INFO | Pipeline | write_metrics | Metrics summary written to metrics.json
+2026-02-26 02:27:53,840 | INFO | Pipeline | main | Job end | status: success
+2026-02-26 02:48:23,150 | INFO | Pipeline | main | Job start
+2026-02-26 02:48:23,151 | INFO | Pipeline | main | CLI arguments: Namespace(input='data.csv', config='config.yaml', output='metrics.json', log_file='run.log')
+2026-02-26 02:48:23,151 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 02:48:23,152 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 02:48:23,152 | INFO | Pipeline | load_config | Validated config: seed=42, window=5, version=v1
+2026-02-26 02:48:23,152 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 02:48:23,168 | INFO | Pipeline | validate_data | Rows loaded: 10
+2026-02-26 02:48:23,168 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 02:48:23,169 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean start
+2026-02-26 02:48:23,174 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean end
+2026-02-26 02:48:23,174 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation start
+2026-02-26 02:48:23,179 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation end
+2026-02-26 02:48:23,181 | INFO | Pipeline | write_metrics | Metrics summary written to metrics.json
+2026-02-26 02:48:23,182 | INFO | Pipeline | main | Job end | status: success
+2026-02-26 02:48:51,601 | INFO | Pipeline | main | Job start
+2026-02-26 02:48:51,602 | INFO | Pipeline | main | CLI arguments: Namespace(input='data.csv', config='config.yaml', output='metrics.json', log_file='run.log')
+2026-02-26 02:48:51,602 | INFO | Pipeline | load_config | Loading config from config.yaml
+2026-02-26 02:48:51,602 | INFO | Pipeline | load_config | Config validation success
+2026-02-26 02:48:51,603 | INFO | Pipeline | load_config | Validated config: seed=42, window=5, version=v1
+2026-02-26 02:48:51,603 | INFO | Pipeline | validate_data | Validating dataset from data.csv
+2026-02-26 02:48:51,609 | INFO | Pipeline | validate_data | Rows loaded: 10
+2026-02-26 02:48:51,609 | INFO | Pipeline | validate_data | Dataset schema validation success
+2026-02-26 02:48:51,609 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean start
+2026-02-26 02:48:51,610 | INFO | Pipeline | process_pipeline | Processing steps: Rolling mean end
+2026-02-26 02:48:51,610 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation start
+2026-02-26 02:48:51,612 | INFO | Pipeline | process_pipeline | Processing steps: Signal generation end
+2026-02-26 02:48:51,614 | INFO | Pipeline | write_metrics | Metrics summary written to metrics.json
+2026-02-26 02:48:51,614 | INFO | Pipeline | main | Job end | status: success
